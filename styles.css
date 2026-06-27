@@ -232,3 +232,295 @@ line-height:2;
 text-align:center;
 
 }
+/* ===========================
+   PART 2
+=========================== */
+
+/* Gift Section */
+
+#giftSection,
+#gallery,
+#cakeSection,
+#final{
+
+padding:80px 20px;
+
+text-align:center;
+
+}
+
+#giftSection h2,
+#gallery h2,
+#cakeSection h2,
+#final h2{
+
+font-size:42px;
+
+margin-bottom:40px;
+
+color:#90caf9;
+
+}
+
+/* Gift Box */
+
+#giftBox{
+
+width:170px;
+
+height:170px;
+
+margin:auto;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:90px;
+
+cursor:pointer;
+
+border-radius:25px;
+
+background:rgba(255,255,255,.08);
+
+box-shadow:0 0 25px rgba(33,150,243,.5);
+
+transition:.4s;
+
+animation:floatGift 3s ease-in-out infinite;
+
+}
+
+#giftBox:hover{
+
+transform:scale(1.15) rotate(8deg);
+
+}
+
+@keyframes floatGift{
+
+0%{transform:translateY(0);}
+50%{transform:translateY(-15px);}
+100%{transform:translateY(0);}
+
+}
+
+/* Gallery */
+
+.slider{
+
+width:90%;
+
+max-width:650px;
+
+margin:auto;
+
+overflow:hidden;
+
+border-radius:25px;
+
+box-shadow:0 0 30px rgba(255,255,255,.2);
+
+}
+
+.slider img{
+
+width:100%;
+
+display:block;
+
+border-radius:25px;
+
+transition:.8s;
+
+}
+
+/* Cake */
+
+.cake{
+
+font-size:140px;
+
+animation:bounceCake 2s infinite;
+
+}
+
+@keyframes bounceCake{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+}
+
+/* Final */
+
+#final h1{
+
+font-size:60px;
+
+color:#ffffff;
+
+text-shadow:0 0 20px #64b5f6;
+
+margin-bottom:20px;
+
+animation:glow 2s infinite alternate;
+
+}
+
+#final p{
+
+font-size:22px;
+
+line-height:1.8;
+
+margin-top:20px;
+
+}
+
+/* Glow */
+
+@keyframes glow{
+
+from{
+
+text-shadow:
+0 0 10px #42a5f5,
+0 0 20px #42a5f5;
+
+}
+
+to{
+
+text-shadow:
+0 0 20px #90caf9,
+0 0 45px #64b5f6;
+
+}
+
+}
+
+/* Floating Hearts */
+
+body::before{
+
+content:"💙 💖 💙";
+
+position:fixed;
+
+left:-10%;
+
+top:100%;
+
+font-size:26px;
+
+opacity:.25;
+
+animation:hearts 18s linear infinite;
+
+pointer-events:none;
+
+}
+
+@keyframes hearts{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+100%{
+
+transform:translateY(-130vh);
+
+}
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+.hero h2{
+
+font-size:52px;
+
+}
+
+.subtitle{
+
+font-size:18px;
+
+}
+
+button{
+
+font-size:18px;
+
+padding:15px 30px;
+
+}
+
+.card{
+
+padding:25px;
+
+}
+
+.card h2{
+
+font-size:32px;
+
+}
+
+.card p{
+
+font-size:18px;
+
+}
+
+#giftBox{
+
+width:130px;
+
+height:130px;
+
+font-size:70px;
+
+}
+
+#final h1{
+
+font-size:40px;
+
+}
+
+#giftSection h2,
+#gallery h2,
+#cakeSection h2,
+#final h2{
+
+font-size:30px;
+
+}
+
+}
